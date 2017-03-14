@@ -1,0 +1,15 @@
+Hi Antima,
+
+Attached the java web service to upload file on remote server.
+You have to change in below:
+1.	file FileTransfererImpl.java, method: upload() :
+-	Change path “d:\\Test2\\" to “/opt/<folder for config.xml>”
+-	Trigger deploy.sh file by line> Runtime.getRuntime().exec("cmd /c start /opt/Scripts/deploy.sh");
+
+2.
+-	Webserver.java: change below line:
+       String bindingURI = "http://localhost:9898/codejava/fileService";
+        To line
+       String bindingURI = "http://<Virtual Machine Name>:9898/codejava/fileService";
+
+        Run the project by RunAs>Java Application
