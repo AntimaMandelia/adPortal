@@ -13,3 +13,11 @@ You have to change in below:
        String bindingURI = "http://<Virtual Machine Name>:9898/codejava/fileService";
 
         Run the project by RunAs>Java Application
+
+
+
+Hi Antima,
+
+Attached the files for Binary Upload web service client and the configuration file.
+To access the Binary Upload service from outside use this format: http://<server_name>:<Port>/codejava/fileService?wsdl
+
